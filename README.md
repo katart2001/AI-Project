@@ -4,6 +4,8 @@ A modern, responsive landing page for the **Promptverse AI** platform concept.
 
 The project focuses on clean architecture, strong typography, smooth animations, and interactive UI elements. It demonstrates modern frontend development practices and is well suited for a portfolio showcase.
 
+🌐 Live Demo - https://katart2001.github.io/AI-Project/
+
 ---
 
 ## 🚀 Project Features
