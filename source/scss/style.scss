@@ -1,0 +1,1007 @@
+@import "nullstyle.scss";
+
+/* =========================================
+   Base / Global
+   ========================================= */
+
+body {
+  background-color: #000;
+}
+
+/* Main layout container */
+.conteiner {
+  max-width: 1300px;
+  margin: 0 auto;
+  /* Note: padding is added via media queries for smaller screens */
+}
+
+/* =========================================
+   Navigation
+   ========================================= */
+
+.nav {
+  background-color: #000;
+  padding: 40px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_block1 {
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    padding: 0 12px;
+  }
+
+  a {
+    color: rgba(255, 255, 255, 1);
+    font-family: Poppins;
+    font-style: Regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  button {
+    color: rgba(0, 0, 0, 1);
+    font-family: Poppins;
+    font-style: Medium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    border-radius: 55px;
+    background: rgba(255, 255, 255, 1);
+    padding: 14px 34px;
+  }
+}
+
+.nav_block2 {
+  display: flex;
+  align-items: center;
+
+  p {
+    padding-left: 10px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Manrope;
+    font-style: SemiBold;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -1.8%;
+    text-align: left;
+  }
+}
+
+/* =========================================
+   Header / Hero
+   ========================================= */
+
+.block {
+  /* Background texture + base color */
+  background: url("../../img/bg1.png") 50% -50% / cover no-repeat, #000;
+}
+
+.block h5 {
+  color: rgba(255, 255, 255, 1);
+  font-family: Manrope;
+  font-style: SemiBold;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -1.8%;
+  text-align: center;
+  padding: 200px 10px 10px 10px;
+}
+
+.block h1 {
+  color: rgba(255, 255, 255, 1);
+  font-family: Manrope;
+  font-style: Medium;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 74px;
+  letter-spacing: -1%;
+  text-align: center;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.block p {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Manrope;
+  font-style: Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -1.8%;
+  text-align: center;
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 28px 0 48px;
+}
+
+.block_b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.set1 {
+  padding: 0 0 200px;
+}
+
+.block_b_dark {
+  font-family: Poppins;
+  font-style: Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 1);
+  background: transparent;
+
+  box-sizing: border-box;
+  border: 1.4px solid rgba(255, 255, 255, 1);
+  border-radius: 55px;
+
+  padding: 14px 34px;
+  margin: 0 28px 0 0;
+}
+
+.block_b_light {
+  border-radius: 55px;
+  background: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+
+  font-family: Poppins;
+  font-style: Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+
+  padding: 14px 34px;
+}
+
+/* =========================================
+   Main
+   ========================================= */
+
+section {
+  background-color: #000;
+}
+
+.h1_block {
+  color: rgba(255, 255, 255, 1);
+  font-family: Manrope;
+  font-style: Medium;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -1%;
+  text-align: center;
+  padding: 200px 10px 28px 10px;
+}
+
+.p_block {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Poppins;
+  font-style: Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28.8px;
+  letter-spacing: -1.8%;
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.set {
+  padding-bottom: 28px;
+}
+
+/* Preview image block */
+.preview {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+
+  img {
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* =========================================
+   More features
+   ========================================= */
+
+.more h1 {
+  font-family: Manrope;
+  font-style: Medium;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 86.4px;
+  letter-spacing: -1.82%;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 200px 0 0;
+
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+}
+
+.more span {
+  color: rgba(255, 255, 255, 1);
+}
+
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px; /* Tune this value to match your design */
+  margin-top: 40px;
+  padding: 61px 0 300px;
+}
+
+.feature__title {
+  color: rgba(255, 255, 255, 1);
+
+  font-family: Manrope;
+  font-style: SemiBold;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.8px;
+  text-align: left;
+
+  padding: 0 0 15px;
+}
+
+.feature__text {
+  color: rgba(130, 130, 130, 1);
+
+  font-family: Manrope;
+  font-style: Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28.8px;
+  letter-spacing: -0.8px;
+  text-align: left;
+}
+
+/* =========================================
+   CTA section
+   ========================================= */
+
+.cta {
+  text-align: center;
+}
+
+.cta {
+  background: #000;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.cta__content {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: url("../../img/cta-bg.png") center bottom / cover no-repeat;
+}
+
+.cta__content h2 {
+  color: rgba(255, 255, 255, 1);
+  font-family: Manrope;
+  font-style: SemiBold;
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 600;
+  line-height: 74px;
+  letter-spacing: -1%;
+  text-align: center;
+  padding: clamp(80px, 10vw, 120px) 0 40px;
+}
+
+.cta__content button {
+  color: rgba(0, 0, 0, 1);
+
+  font-family: Poppins;
+  font-style: Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+
+  border-radius: 55px;
+  background: rgba(255, 255, 255, 1);
+  padding: 14px 34px;
+
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  margin-bottom: clamp(60px, 8vw, 110px);
+}
+
+.cta__content button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* =========================================
+   Footer
+   ========================================= */
+
+/* Footer border + big spacing from previous section */
+.footer {
+  border-top: 1px solid #ffffff;
+  margin: 250px 0 0;
+}
+
+/* Footer base styles */
+.footer {
+  background: #000;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 60px 0 30px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+  a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.footer__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.footer__title {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 16px;
+  letter-spacing: 0.02em;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.footer__col--center {
+  justify-self: center;
+  width: 100%;
+  max-width: 520px;
+}
+
+.footer__contacts {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 18px;
+  font-size: 13px;
+}
+
+.footer__contact {
+  display: inline-block;
+}
+
+.footer__row {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 18px 0;
+}
+
+.footer__label {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.footer__social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.85);
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.35);
+  }
+}
+
+.footer__location p {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.footer__divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+  margin: 40px 0 22px;
+}
+
+.footer__bottom {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.footer__copy {
+  display: grid;
+  gap: 6px;
+  justify-self: start;
+}
+
+.footer__brand {
+  justify-self: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 11px;
+  opacity: 0.75;
+}
+
+.footer__lang {
+  justify-self: end;
+  display: flex;
+  gap: 12px;
+}
+
+.footer__lang-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  font-size: 12px;
+  padding: 6px 8px;
+
+  &.is-active,
+  &:hover {
+    color: #fff;
+  }
+}
+
+/* =========================================
+   Responsive
+   ========================================= */
+
+/* --- Tablet and below --- */
+@media (max-width: 1200px) {
+  /* Add horizontal padding to your container */
+  .conteiner {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 980px) {
+  /* -------- NAV -------- */
+  /* Allow nav to wrap on smaller screens */
+  .nav_flex {
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  /* Center the logo row */
+  .nav_block2 {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Move menus below the logo */
+  .nav_block1:first-child {
+    order: 2;
+  }
+  .nav_block1:last-child {
+    order: 3;
+  }
+
+  .nav_block1 ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+  }
+
+  /* -------- HERO -------- */
+  /* Reduce large top padding in hero */
+  .block h5 {
+    padding: 140px 10px 10px;
+  }
+
+  /* Make hero title smaller and wider */
+  .block h1 {
+    max-width: 90%;
+    font-size: 44px;
+    line-height: 54px;
+  }
+
+  /* Make hero text wider */
+  .block p {
+    max-width: 90%;
+  }
+
+  /* Allow CTA buttons to wrap */
+  .block_b {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  /* Remove the fixed margin when buttons wrap */
+  .block_b_dark {
+    margin: 0;
+  }
+
+  /* Reduce bottom spacing */
+  .set1 {
+    padding-bottom: 140px;
+  }
+
+  /* -------- SECTION TITLES -------- */
+  .h1_block {
+    padding-top: 140px;
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .p_block {
+    max-width: 90%;
+  }
+
+  /* Preview images: a bit wider */
+  .preview {
+    margin-top: 36px;
+  }
+
+  .preview img {
+    width: 95%;
+  }
+
+  /* -------- MORE -------- */
+  .more h1 {
+    font-size: 44px;
+    line-height: 58px;
+    padding-top: 140px;
+  }
+
+  /* Features grid: 2 columns on tablets */
+  .features__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-bottom: 180px;
+  }
+
+  /* -------- CTA -------- */
+  .cta__content h1 {
+    font-size: 38px;
+    line-height: 52px;
+    padding: 80px 0 40px;
+  }
+
+  .cta__content button {
+    margin-bottom: 90px;
+  }
+
+  /* -------- FOOTER -------- */
+  .footer {
+    margin-top: 140px;
+  }
+
+  .footer__top {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__col--center {
+    grid-column: 1 / -1;
+    justify-self: start;
+    max-width: 100%;
+  }
+}
+
+/* --- Phones --- */
+@media (max-width: 600px) {
+  /* Smaller container padding on phones */
+  .conteiner {
+    padding: 0 16px;
+  }
+
+  /* -------- NAV -------- */
+  .nav {
+    padding: 20px 12px;
+  }
+
+  .nav_block1 button {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  .nav_block2 p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  /* -------- HERO -------- */
+  .block h5 {
+    padding: 110px 10px 10px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .block h1 {
+    max-width: 100%;
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .block p {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 26px;
+    padding: 18px 0 28px;
+  }
+
+  /* Make buttons easier to tap */
+  .block_b_dark,
+  .block_b_light {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .set1 {
+    padding-bottom: 100px;
+  }
+
+  /* -------- SECTION TITLES -------- */
+  .h1_block {
+    padding-top: 110px;
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .p_block {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  /* -------- MORE -------- */
+  .more h1 {
+    font-size: 32px;
+    line-height: 44px;
+    padding-top: 110px;
+  }
+
+  /* Features grid: 1 column on phones */
+  .features__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 40px 0 120px;
+  }
+
+  .feature__title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .feature__text {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  /* -------- CTA -------- */
+  .cta__content h1 {
+    font-size: 28px;
+    line-height: 40px;
+    padding: 70px 0 28px;
+  }
+
+  .cta__content button {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 70px;
+    display: inline-block;
+  }
+
+  /* Reduce background dominance on tiny screens */
+  .cta {
+    background: url("../../img/cta-bg.png") center bottom / 85% no-repeat, #000;
+  }
+
+  /* -------- FOOTER -------- */
+  .footer {
+    margin-top: 100px;
+  }
+
+  .footer__top {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .footer__bottom {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer__copy,
+  .footer__lang {
+    justify-self: center;
+  }
+}
+
+/* =========================================
+   CTA animations
+   ========================================= */
+
+/* Initial state */
+.cta {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: ctaFadeUp 0.9s ease forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes ctaFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   Buttons animation
+   ========================================= */
+
+button {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.12);
+  opacity: 0.95;
+}
+
+.feature {
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-6px);
+  background-color: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav_block1 a {
+  position: relative;
+}
+
+.nav_block1 a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width 0.25s ease;
+}
+
+.nav_block1 a:hover::after {
+  width: 100%;
+}
+
+/* =========================================
+   Reveal on scroll
+   ========================================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* =========================================
+   3-column marquee 
+   ========================================= */
+
+.marquee {
+  background: #000;
+  padding: 0 0 140px;
+  overflow: hidden;
+}
+
+.marquee__wrap {
+  position: relative;
+  margin-top: 60px;
+
+  /* three columns */
+  display: grid;
+  // grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(1, 3fr);
+  gap: 28px;
+  width: 100%;
+
+  /* side fade like on screenshot */
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 90px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  &::before {
+    left: 0;
+    background: linear-gradient(to right, #000 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  &::after {
+    right: 0;
+    background: linear-gradient(to left, #000 0%, rgba(0, 0, 0, 0) 100%);
+  }
+}
+
+.marquee__col {
+  overflow: hidden; /* hides the moving track outside column */
+  border-radius: 14px; /* optional */
+  width: 100%;
+  min-width: 0;
+}
+
+/* Track moves horizontally forever */
+.marquee__track {
+  display: flex;
+  width: max-content;
+  gap: 16px;
+
+  animation: marqueeX 18s linear infinite;
+  will-change: transform;
+}
+
+/* Two groups in a row */
+.marquee__group {
+  display: flex;
+  gap: 16px;
+}
+
+/* Items */
+.marquee__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  min-width: 320px; /* tweak to match design */
+  padding: 14px 16px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+
+  font-family: Manrope;
+  font-size: 14px;
+  line-height: 1.2;
+
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.marquee__item:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+/* The movement itself: shift by 50% (because we duplicated the group) */
+@keyframes marqueeX {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Delays for each column (your “small offset”) */
+.marquee__col--1 .marquee__track {
+  animation-delay: 0s;
+}
+.marquee__col--2 .marquee__track {
+  animation-delay: -3s;
+}
+.marquee__col--3 .marquee__track {
+  animation-delay: -6s;
+}
+
+/* Speed variation to feel more organic (optional) */
+.marquee__col--2 .marquee__track {
+  animation-duration: 20s;
+}
+.marquee__col--3 .marquee__track {
+  animation-duration: 22s;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .marquee__wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .marquee__col {
+    border-radius: 16px;
+  }
+
+  .marquee__item {
+    min-width: 280px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track {
+    animation: none !important;
+    transform: none !important;
+  }
+}
